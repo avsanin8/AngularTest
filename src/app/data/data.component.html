@@ -1,0 +1,17 @@
+
+  Hello from data. It works!
+  <br/>{{message}}{{1+1}}
+  <br/>This is message2: {{message2}}
+  <br/>TimeToString: {{message3}}
+  <br/>TimeToSetInterval: {{curTime}}
+  <br/>Items from data.component.ts:
+    <p *ngFor="let item of items; let i = index;
+      let first = first; let last = last; 
+      let even = even;
+      let odd = odd;
+      "[ngClass] = "{first:first, last:last, even:even, odd:odd}">
+      {{i}} {{ item }} Logic: {{last}}
+    </p> 
+  
+  
+
