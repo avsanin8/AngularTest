@@ -10,13 +10,25 @@ export class DataComponent implements OnInit {
   message2: string = new Date().toString();
   message3: string = new Date().toTimeString();
   curTime: string;
+  loggedIn = false;
   items = ["Angular,", "React,", "Vue,", "Bootstrap,", "Node.js"];
+  isCollapsed: boolean = true;
+
   constructor() { 
     //this.message = "World" // or use constructor to init message
     setInterval(()=>{
       this.curTime = new Date().toTimeString();
     }, 1000)
   }
+
+  myEvent(event){
+    console.log("console.log: " + event);
+  }
+
+  toggleCollapse(){
+    this.isCollapsed = !this.isCollapsed; 
+  }
+
 
   ngOnInit() {
   }
