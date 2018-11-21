@@ -13,6 +13,8 @@ export class DataComponent implements OnInit {
   loggedIn = false;
   items = ["Angular,", "React,", "Vue,", "Bootstrap,", "Node.js"];
   isCollapsed: boolean = true;
+  myText:string = "this is myText";
+  visibility: boolean = true;
 
   constructor() { 
     //this.message = "World" // or use constructor to init message
@@ -27,6 +29,10 @@ export class DataComponent implements OnInit {
 
   toggleCollapse(){
     this.isCollapsed = !this.isCollapsed; 
+  }
+
+  toggleInvis(){
+    this.visibility = !this.visibility;
   }
 
 
